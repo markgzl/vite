@@ -1,10 +1,10 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import style from "./App.module.scss";
 
 function App() {
-  // const [count, setCount] = useState(0);
-  // console.log(count);
+  const [count, setCount] = useState(0);
+  console.log(count);
   return (
     <div className="app">
       <h1 className="h">Hello Vite + React!</h1>
