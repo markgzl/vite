@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint:script": "eslint --fix --ext .js,.jsx,.ts,.tsx --quiet ./",
+    "lint:script": "eslint --fix --ext .js,.jsx,.ts,.tsx --quiet ./src",
     "postinstall": "husky install"
   },
   "lint-staged": {
@@ -14,7 +14,9 @@
       "npm run lint:script",
       "git add ."
     ],
-    "**/*.{scss,md,json,html}":["prettier --write"]
+    "**/*.{scss,md,json,html}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "react": "^18.2.0",
