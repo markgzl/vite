@@ -13,7 +13,8 @@
     "**/*.{js,jsx,tsx,ts}": [
       "npm run lint:script",
       "git add ."
-    ]
+    ],
+    "**/*.{scss,md,json,html}":["prettier --write"]
   },
   "dependencies": {
     "react": "^18.2.0",
