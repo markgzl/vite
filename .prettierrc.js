@@ -1,8 +1,14 @@
 module.exports = {
-  printWidth: 80, //一行的字符数，如果超过会进行换行，默认为80
-  tabWidth: 2, // 一个 tab 代表几个空格数，默认为 2 个
-  useTabs: false, //是否使用 tab 进行缩进，默认为false，表示用空格进行缩减
-  singleQuote: false, // 字符串是否使用单引号，默认为 false，使用双引号
-  semi: true, // 行尾是否使用分号，默认为true
-  bracketSpacing: true, // 对象大括号直接是否有空格，默认为 true，效果：{ a: 1 }
+  printWidth: 120, // 换行字符串阈值
+  tabWidth: 2, // 设置工具每一个水平缩进的空格数
+  useTabs: false,
+  semi: true, // 句末是否加分号
+  vueIndentScriptAndStyle: true,
+  singleQuote: false,
+  trailingComma: "none", // 最后一个对象元素加逗号
+  bracketSpacing: true, // 对象，数组加空格
+  jsxBracketSameLine: true, // jsx > 是否另起一行
+  arrowParens: "always", // (x) => {} 是否要有小括号
+  requirePragma: false, // 不需要写文件开头的 @prettier
+  insertPragma: false, // 不需要自动在文件开头插入 @prettier
 };
